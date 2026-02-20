@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # qobuz-ui.sh
 #
-# Qobuz Downloader UI (Zenity wrapper for streamrip "rip")
+# Qrip 
+# Simple Zenity GUI wrapper for streamrip ("rip")
 # -------------------------------------------------------
 # Goals:
 # - Provide a simple GUI on Linux Mint (and most distros) to download from Qobuz using streamrip.
@@ -20,14 +21,14 @@
 # - streamrip installed as `rip` (recommended via `pipx install streamrip`)
 #
 # Suggested install paths:
-# - ~/.local/bin/qobuz-ui
-# - ~/.local/share/applications/qobuz-downloader.desktop
+# - ~/.local/bin/Qrip
+# - ~/.local/share/applications/Qrip.desktop
 
 set -euo pipefail
 
 APP_NAME="Qrip"
 APP_TITLE="Qrip"
-STATE_DIR="${HOME}/.local/state/qobuz-ui"
+STATE_DIR="${HOME}/.local/state/qrip"
 LOG_DIR="${STATE_DIR}/logs"
 
 # Where streamrip normally stores config:
