@@ -46,7 +46,7 @@ If you're a developer and would like to help, you're more than welcome.
 ---
 
 ## Installation
-
+Tested on Linux Mint / Debian-based systems.
 ```bash
 sudo apt update
 sudo apt install zenity pipx git
