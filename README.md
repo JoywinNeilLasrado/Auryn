@@ -45,8 +45,6 @@ If you're a developer and would like to help, you're more than welcome.
 
 ## Installation
 
-## Installation
-
 ```bash
 pipx install streamrip
 cp src/Qrip ~/.local/bin/
