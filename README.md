@@ -48,6 +48,8 @@ If you're a developer and would like to help, you're more than welcome.
 ## Installation
 
 ```bash
+git clone https://github.com/TheZupZup/Qrip.git
+cd Qrip
 pipx install streamrip
 cp src/Qrip ~/.local/bin/
 chmod +x ~/.local/bin/Qrip
