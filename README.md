@@ -81,16 +81,6 @@ As this is my first open-source project, constructive feedback and guidance are 
 
 ---
 
-## Disclaimer
-
-This project is just a UI wrapper for Streamrip.  
-You must own a valid Qobuz account.
-
----
-
-Made with curiosity and coffee ☕
-
-
 ## Good First Issues
 
 This project is beginner-friendly.
@@ -103,3 +93,14 @@ If you're new to open source, here are some ideas:
 - Improve UI messages
 
 Feel free to open an issue before submitting a PR.
+
+---
+
+## Disclaimer
+
+This project is just a UI wrapper for Streamrip.  
+You must own a valid Qobuz account.
+
+---
+
+Made with curiosity and coffee ☕
