@@ -10,16 +10,44 @@ I started building Qrip to create my own high-quality FLAC music library on my N
 
 Instead of relying entirely on streaming platforms, I wanted full control over my music collection, quality, and storage.
 
-This project was created with the help of ChatGPT as part of my learning journey.  
+This project was created with the help of ChatGPT and Claude as part of my learning journey.  
 I am curious, motivated, and continuously improving my understanding of the codebase.
 
 ---
+
+## Disclaimer & Legal
+
+**I will not be responsible for how you use Qrip.**
+
+This program **DOES NOT** include:
+
+- Code to bypass Qobuz's DRM or region restrictions
+- Qobuz app IDs, secrets, or private API keys
+- Any tool designed to circumvent copyright protection
+
+Qrip is a **UI wrapper only**. It calls [Streamrip](https://github.com/nathom/streamrip) (`rip`) which is a separate, independent open-source project. Qrip does not directly interact with any streaming service — it simply provides a graphical interface around an existing command-line tool.
+
+**You must own a valid paid subscription** to any service you download from. Qrip is intended for personal use to build your own music library from content you have legitimately paid for.
+
+Qobuz, Deezer, Tidal, and SoundCloud are registered trademarks of their respective owners.  
+Qrip has no partnership, sponsorship, or endorsement with any of these services.
+
+By using Qrip, you agree to comply with the Terms of Service of any platform you use it with:
+
+- [Qobuz Terms of Service](https://www.qobuz.com/us-en/info/legal/terms-of-use)
+- [Deezer Terms of Service](https://www.deezer.com/legal/cgu)
+- [Tidal Terms of Service](https://tidal.com/terms)
+- [SoundCloud Terms of Service](https://soundcloud.com/terms-of-use)
+
+---
+
 ## Goal
 
 Make a simple, beginner-friendly GUI for Streamrip that:
 
-- Lets users paste a Qobuz album URL
+- Lets users paste a URL (Qobuz, Deezer, Tidal, SoundCloud)
 - Choose a download folder
+- Select audio quality (MP3 / FLAC / Hi-Res / MQA)
 - See real-time download progress
 - See the current track being downloaded
 - See remaining tracks
@@ -38,34 +66,46 @@ If you're a developer and would like to help, you're more than welcome.
 
 ## Current Features
 
-- URL input  
-- Folder selection  
-- Download execution  
-- Basic terminal progress window  
+- Multi-URL support (Qobuz, Deezer, Tidal, SoundCloud)
+- URL input & folder selection
+- Audio quality selection (MP3 128 / MP3 320 / CD FLAC / Hi-Res FLAC / MQA)
+- Real-time download progress
+- Desktop notifications on completion
+- Isolated config per run (avoids "Skipping" bugs)
+- Automatic log cleanup (>7 days)
+- Built-in HTML help & command generator
 
 ---
 
 ## Installation
+
 Tested on Linux Mint / Debian-based systems.
+
 ```bash
 sudo apt update
 sudo apt install zenity pipx git
 git clone https://github.com/TheZupZup/Qrip.git
 cd Qrip
 pipx install streamrip
-cp src/Qrip ~/.local/bin/
-chmod +x ~/.local/bin/Qrip
-Qrip
+cp src/qrip ~/.local/bin/
+chmod +x ~/.local/bin/qrip
+qrip
+```
+
+Or install via the `.deb` package:
+
+```bash
+sudo dpkg -i qrip_2.0.0_all.deb
 ```
 
 ---
 
 ## Planned Features
 
-- Real progress tracking (percentage, current track, remaining tracks)  
-- Better error handling  
-- Cleaner UI  
-- English-only codebase for contributors  
+- Real progress tracking (percentage, current track, remaining tracks)
+- Better error handling
+- Cleaner UI
+- English-only codebase for contributors
 
 ---
 
@@ -92,6 +132,7 @@ As this is my first open-source project, constructive feedback and guidance are 
 This project is beginner-friendly.
 
 If you're new to open source, here are some ideas:
+
 - Improve error handling
 - Refactor parts of the script
 - Improve the desktop entry
@@ -102,10 +143,10 @@ Feel free to open an issue before submitting a PR.
 
 ---
 
-## Disclaimer
+## License
 
-This project is just a UI wrapper for Streamrip.  
-You must own a valid Qobuz account.
+Copyright (C) 2025 TheZupZup — Qrip  
+Licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ---
 
