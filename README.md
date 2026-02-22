@@ -1,6 +1,6 @@
 # Qrip
 [![Download](https://img.shields.io/badge/Download-.deb-blue?style=for-the-badge)](https://github.com/TheZupZup/Qrip/releases/latest)
-![CI](https://github.com/TheZupZup/Qrip/actions/workflows/CI.yml/badge.svg)
+
 
 Qrip is a simple graphical interface for Streamrip, built for Linux users who want a cleaner way to download music from Qobuz.
 
