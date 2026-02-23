@@ -144,7 +144,3 @@ Feel free to open an issue before submitting a PR.
 
 Copyright (C) 2025 TheZupZup — Qrip  
 Licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
-
----
-
-Made with curiosity and coffee ☕
