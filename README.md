@@ -2,19 +2,90 @@
 [![Download](https://img.shields.io/badge/Download-.deb-blue?style=for-the-badge)](https://github.com/TheZupZup/Qrip/releases/latest)
 
 
-Qrip is a simple graphical interface for Streamrip, built for Linux users who want a cleaner way to download music from Qobuz.
-
-⚠️ I am a beginner and this is my first open-source project.
-
-I started building Qrip to create my own high-quality FLAC music library on my NAS.
-
-Instead of relying entirely on streaming platforms, I wanted full control over my music collection, quality, and storage.
-
-This project was created with the help of ChatGPT and Claude as part of my learning journey.  
-I am curious, motivated, and continuously improving my understanding of the codebase.
+Qrip is a clean and simple graphical interface for Streamrip, designed for Linux users who want an easier way to build and manage a high-quality music library.
 
 ---
 
+## Features
+
+- Simple and intuitive UI for Streamrip
+- Download music from supported services (Qobuz, etc.)
+- Built for FLAC / high-quality audio
+- Real-time progress and logs
+- One-click experience (no terminal required)
+
+---
+
+## Why Qrip?
+
+Qrip was created to simplify the process of building a personal music library without relying entirely on streaming platforms.
+
+It is designed for users who want:
+
+- Full control over their music collection
+- High-quality audio (FLAC / Hi-Res)
+- A clean and easy workflow
+- A solution that integrates with self-hosted setups
+
+---
+
+## Use Case
+
+Qrip is ideal for:
+
+- Building a local music library
+- Storing music on a NAS
+- Creating a self-hosted media ecosystem
+- Using media servers like Jellyfin
+
+---
+
+## Workflow
+Music Link → Qrip → Local/NAS Storage → Jellyfin → Playback
+
+
+## Installation
+
+Tested on Linux Mint / Debian-based systems
+
+
+---
+
+## Installation
+
+Download the `.deb` package from the releases section:
+
+https://github.com/TheZupZup/Qrip/releases
+
+Then install:
+
+```bash
+sudo dpkg -i qrip.deb
+```
+
+---
+
+##Project Status
+
+This is an actively developed project.
+
+It is part of my open-source learning journey, and I am continuously improving it.
+
+Feedback, suggestions, and contributions are welcome.
+
+---
+
+##Future Ideas
+
+Better library organization
+
+Improved UI/UX
+
+Offline-ready workflows
+
+Integration with self-hosted media systems
+
+---
 ## Disclaimer & Legal
 
 **I will not be responsible for how you use Qrip.**
@@ -41,106 +112,18 @@ By using Qrip, you agree to comply with the Terms of Service of any platform you
 
 ---
 
-## Goal
+Acknowledgment
 
-Make a simple, beginner-friendly GUI for Streamrip that:
-
-- Lets users paste a URL (Qobuz, Deezer, Tidal, SoundCloud)
-- Choose a download folder
-- Select audio quality (MP3 / FLAC / Hi-Res / MQA)
-- See real-time download progress
-- See the current track being downloaded
-- See remaining tracks
-- View percentage progress
+This project was created with the help of AI tools as part of my learning process.
 
 ---
+Author
 
-## Why this project?
-
-I wanted something simple, clean, and easy to use.  
-This is also my first real open-source learning experience.
-
-If you're a developer and would like to help, you're more than welcome.
+Created by TheZupZup
 
 ---
-
-## Current Features
-
-- Multi-URL support (Qobuz, Deezer, Tidal, SoundCloud)
-- URL input & folder selection
-- Audio quality selection (MP3 128 / MP3 320 / CD FLAC / Hi-Res FLAC / MQA)
-- Real-time download progress
-- Desktop notifications on completion
-- Isolated config per run (avoids "Skipping" bugs)
-- Automatic log cleanup (>7 days)
-- Built-in HTML help & command generator
-
----
-
-## Installation
-
-Tested on Linux Mint / Debian-based systems
-
-## Download
-
-Download the latest `.deb` package from:
-
-https://github.com/TheZupZup/Qrip/releases/latest
-
-## Install
-
-After downloading the file:
-
-```bash
-sudo apt install ./qrip_0.1.1_all.deb
-```
-
----
-
-## Planned Features
-
-- Real progress tracking (percentage, current track, remaining tracks)
-- Better error handling
-- Cleaner UI
-- English-only codebase for contributors
-
----
-
-## Distribution Goals
-
-- Initial release as a `.deb` package for Debian-based distributions (Linux Mint, Ubuntu, etc.)
-- Future goal: make Qrip available across multiple Linux distributions
-- Long-term goal: explore cross-platform support, including Windows (.exe)
-
-Packaging and cross-platform guidance are very welcome.
-
----
-
-## Contributions
-
-Contributions, suggestions, and improvements are welcome.
-
-As this is my first open-source project, constructive feedback and guidance are greatly appreciated.
-
----
-
-## Good First Issues
-
-This project is beginner-friendly.
-
-If you're new to open source, here are some ideas:
-
-- Improve error handling
-- Refactor parts of the script
-- Improve the desktop entry
-- Add basic tests
-- Improve UI messages
-
-Feel free to open an issue before submitting a PR.
-
----
-
 ## License
 
 Copyright (C) 2025 TheZupZup — Qrip  
 Licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
