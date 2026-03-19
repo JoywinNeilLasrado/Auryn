@@ -88,7 +88,13 @@ Integration with self-hosted media systems
 ---
 ## Disclaimer & Legal
 
-**I will not be responsible for how you use Qrip.**
+Qrip is a graphical interface for Streamrip and does not provide or host any content.
+
+This software is intended for personal use only.
+
+Users are responsible for ensuring that their use of this tool complies with the terms of service of any platforms they access.
+
+The developer of Qrip does not encourage or support any misuse of this software.
 
 This program **DOES NOT** include:
 
@@ -97,8 +103,6 @@ This program **DOES NOT** include:
 - Any tool designed to circumvent copyright protection
 
 Qrip is a **UI wrapper only**. It calls [Streamrip](https://github.com/nathom/streamrip) (`rip`) which is a separate, independent open-source project. Qrip does not directly interact with any streaming service — it simply provides a graphical interface around an existing command-line tool.
-
-**You must own a valid paid subscription** to any service you download from. Qrip is intended for personal use to build your own music library from content you have legitimately paid for.
 
 Qobuz, Deezer, Tidal, and SoundCloud are registered trademarks of their respective owners.  
 Qrip has no partnership, sponsorship, or endorsement with any of these services.
