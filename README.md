@@ -65,7 +65,7 @@ sudo dpkg -i qrip.deb
 
 ---
 
-##Project Status
+## Project Status
 
 This is an actively developed project.
 
@@ -75,7 +75,7 @@ Feedback, suggestions, and contributions are welcome.
 
 ---
 
-##Future Ideas
+## Future Ideas
 
 Better library organization
 
@@ -112,12 +112,12 @@ By using Qrip, you agree to comply with the Terms of Service of any platform you
 
 ---
 
-Acknowledgment
+## Acknowledgment
 
 This project was created with the help of AI tools as part of my learning process.
 
 ---
-Author
+## Author
 
 Created by TheZupZup
 
