@@ -140,7 +140,7 @@ def resolve_config_dir() -> str:
     """
     config_home = os.getenv("XDG_CONFIG_HOME")
     if config_home is not None:
-        return os.getenv("XGD_CONFIG_HOME")
+        return os.getenv("XDG_CONFIG_HOME")
     return "~/.config"
 
 
