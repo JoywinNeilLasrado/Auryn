@@ -5,11 +5,11 @@
 Auryn is a graphical interface for an existing open-source tool. It does not provide, host, or distribute any content.
 
 <p align="center">
-  <img src="assets/qrip.svg" width="120">
+  <img src="./assets/qrip.svg" width="120">
 </p>
 
 <p align="center">
-  <img src="assets/qrip_ui.png" width="900">
+  <img src="./assets/qrip_ui.png" width="900">
 </p>
 
 <p align="center">
