@@ -1,8 +1,8 @@
-# Auryn
+# Qrip
 [![Download](https://img.shields.io/badge/Download-.deb-blue?style=for-the-badge)](https://codeberg.org/TheZupZup/Qrip/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/thezupzup/qrip)](https://hub.docker.com/r/thezupzup/qrip)
 
-Auryn is a graphical interface for an existing open-source tool. It does not provide, host, or distribute any content.
+Qrip is a graphical interface for an existing open-source tool. It does not provide, host, or distribute any content.
 
 <p align="center">
   <img src="assets/qrip.svg" width="120">
@@ -13,7 +13,7 @@ Auryn is a graphical interface for an existing open-source tool. It does not pro
 </p>
 
 <p align="center">
-  <b>graphical interface for an existing open-source command-line tool</b>
+  <b>Modern graphical interface for an existing open-source audio tool</b>
 </p>
 
 ## Announcement
@@ -24,7 +24,7 @@ Auryn is a graphical interface for an existing open-source tool. It does not pro
 
 ## Features
 
-- Simple and intuitive GUI for managing local audio workflows
+- Simple and intuitive UI for Streamrip
 - Manage and organize local audio libraries
 - Support for high-quality audio formats (FLAC, etc.)
 - Real-time progress and logs
@@ -32,9 +32,9 @@ Auryn is a graphical interface for an existing open-source tool. It does not pro
 
 ---
 
-## Why Auryn?
+## Why Qrip?
 
-Building and managing a personal local audio library
+building and managing a personal local audio library
 
 It is designed for users who want:
 
@@ -47,7 +47,7 @@ It is designed for users who want:
 
 ## Use Case
 
-Auryn is ideal for:
+Qrip is ideal for:
 
 - Building a local music library
 - Storing music on a NAS
@@ -116,11 +116,11 @@ Integration with self-hosted media systems
 ---
 ## Disclaimer & Legal
 
-Auryn is a graphical interface for an existing open source audio tool and does not provide, host, or distribute any content.
+Qrip is a graphical interface for Streamrip and does not provide, host, or distribute any content.
 
-This software is intended for legitimate use with content you own or are authorized to access.
+This software is intended for personal use only.
 
-Users are responsible for ensuring that their use of this tool complies with applicable laws and the terms of service of any platforms they access.
+Users are responsible for ensuring that their use of this tool complies with the terms of service of any platforms they access.
 
 The developer of Qrip does not encourage or support misuse of this software.
 
@@ -130,23 +130,25 @@ The developer of Qrip does not encourage or support misuse of this software.
 
 This program does not include:
 
-- Any functionality related to restricted or protected content access
+- Any functionality intended to bypass DRM or regional restrictions
 - Any application IDs, secrets, or private API keys
-- Any tools intended to violate platform terms of service
+- Any tools designed to circumvent copyright protection
 
 ---
 
 ### Technical clarification
 
-Auryn is a GUI frontend for an existing open-source command-line tool.
-It does not host, distribute, or provide access to copyrighted content, and it does not directly interact with any online services.
+Qrip is a user interface (UI) wrapper.
+
+It relies on Streamrip (`rip`), which is a separate and independent open-source project.  
+Qrip does not directly interact with any streaming service and only provides a graphical interface for an existing command-line tool.
 
 ---
 
 ### Trademarks
 
 Qobuz, Deezer, Tidal, and SoundCloud are registered trademarks of their respective owners.  
-Auryn is not affiliated with, endorsed by, or sponsored by any of these services.
+Qrip is not affiliated with, endorsed by, or sponsored by any of these services.
 
 ---
 
@@ -173,6 +175,6 @@ Created by TheZupZup
 ---
 ## License
 
-Copyright (C) 2025 TheZupZup — Auryn  
+Copyright (C) 2025 TheZupZup — Qrip  
 Licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
