@@ -125,6 +125,10 @@ def resolve_config_dir():
     return os.path.join(xdg, "streamrip")
 
 
+def toml_escape(value):
+    return value.replace("\\", "\\\\").replace('"', '\\"')
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 #  QripApp — charge l'UI depuis Qrip.ui
 # ─────────────────────────────────────────────────────────────────────────────
@@ -488,7 +492,7 @@ class QripApp:
     def _run_download(self, url, quality):
         cfg_path = os.path.join(resolve_config_dir(), "config.toml")
         cfg = os.path.expanduser(cfg_path)
-        db  = os.path.expanduser("~/.config/streamrip/downloads.db")
+        db = os.path.join(resolve_config_dir(), "downloads.db")
 
         if self.cb_clear_cache.get_active() and os.path.exists(db):
             try:
@@ -498,10 +502,11 @@ class QripApp:
                 pass
 
         if os.path.exists(cfg):
+            safe_folder = toml_escape(self._dest_folder)
             subprocess.run(["sed", "-i", f"s/^quality = .*/quality = {quality}/", cfg], check=False)
             subprocess.run(["sed", "-i", "s/use_auth_token = .*/use_auth_token = true/", cfg], check=False)
             subprocess.run(["sed", "-i",
-                f'0,/^folder = .*/s||folder = "{self._dest_folder}"|', cfg], check=False)
+                f'0,/^folder = .*/s||folder = "{safe_folder}"|', cfg], check=False)
 
         GLib.idle_add(self._log, f"🌐  URL     : {url}\n", "info")
         GLib.idle_add(self._log, f"🎵  Quality : {quality} | Dest : {self._dest_folder}\n", "info")
